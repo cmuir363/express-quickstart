@@ -3,7 +3,6 @@ import twilio from "twilio"
 
 const router = express.Router()
 
-
 const VoiceResponse = twilio.twiml.VoiceResponse
 
 router.post('/', (req, res) => {
