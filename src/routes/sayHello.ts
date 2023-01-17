@@ -2,13 +2,15 @@ import express from "express"
 
 const router = express.Router()
 
+
 const helloHtml: string = `
   <div>
     <h1>Hello World!!</h1>
   </div>
 `
 
-router.post('/', (req, res) => {
+/* GET home page. */
+router.get('/', (req, res) => {
   res.send(helloHtml)
 });
 
